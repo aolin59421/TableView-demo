@@ -14,6 +14,12 @@
 		884700411B8D4E5E0044E5F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884700401B8D4E5E0044E5F9 /* Images.xcassets */; };
 		884700441B8D4E5E0044E5F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884700421B8D4E5E0044E5F9 /* LaunchScreen.xib */; };
 		884700501B8D4E5E0044E5F9 /* TableView____demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8847004F1B8D4E5E0044E5F9 /* TableView____demoTests.m */; };
+		8847005E1B8D4F5C0044E5F9 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8847005D1B8D4F5C0044E5F9 /* TableViewCell.m */; };
+		884700601B8D4F760044E5F9 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8847005F1B8D4F760044E5F9 /* TableViewCell.xib */; };
+		8847006B1B8D52550044E5F9 /* SelfModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8847006A1B8D52550044E5F9 /* SelfModel.m */; };
+		8847006D1B8D55C40044E5F9 /* 5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8847006C1B8D55C40044E5F9 /* 5.gif */; };
+		884700701B8D5AFF0044E5F9 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8847006F1B8D5AFF0044E5F9 /* BaseTableViewController.m */; };
+		884700731B8D5B7D0044E5F9 /* SBM.m in Sources */ = {isa = PBXBuildFile; fileRef = 884700721B8D5B7D0044E5F9 /* SBM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,16 @@
 		884700491B8D4E5E0044E5F9 /* TableView基类继承demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TableView基类继承demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8847004E1B8D4E5E0044E5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8847004F1B8D4E5E0044E5F9 /* TableView____demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TableView____demoTests.m"; sourceTree = "<group>"; };
+		8847005C1B8D4F5C0044E5F9 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		8847005D1B8D4F5C0044E5F9 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		8847005F1B8D4F760044E5F9 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		884700691B8D52550044E5F9 /* SelfModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfModel.h; sourceTree = "<group>"; };
+		8847006A1B8D52550044E5F9 /* SelfModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfModel.m; sourceTree = "<group>"; };
+		8847006C1B8D55C40044E5F9 /* 5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 5.gif; sourceTree = "<group>"; };
+		8847006E1B8D5AFF0044E5F9 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		8847006F1B8D5AFF0044E5F9 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		884700711B8D5B7D0044E5F9 /* SBM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBM.h; sourceTree = "<group>"; };
+		884700721B8D5B7D0044E5F9 /* SBM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBM.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +97,20 @@
 		884700321B8D4E5E0044E5F9 /* TableView基类继承demo */ = {
 			isa = PBXGroup;
 			children = (
+				8847006C1B8D55C40044E5F9 /* 5.gif */,
 				884700371B8D4E5E0044E5F9 /* AppDelegate.h */,
 				884700381B8D4E5E0044E5F9 /* AppDelegate.m */,
 				8847003A1B8D4E5E0044E5F9 /* ViewController.h */,
 				8847003B1B8D4E5E0044E5F9 /* ViewController.m */,
+				884700711B8D5B7D0044E5F9 /* SBM.h */,
+				884700721B8D5B7D0044E5F9 /* SBM.m */,
+				8847006E1B8D5AFF0044E5F9 /* BaseTableViewController.h */,
+				8847006F1B8D5AFF0044E5F9 /* BaseTableViewController.m */,
+				884700691B8D52550044E5F9 /* SelfModel.h */,
+				8847006A1B8D52550044E5F9 /* SelfModel.m */,
+				8847005C1B8D4F5C0044E5F9 /* TableViewCell.h */,
+				8847005D1B8D4F5C0044E5F9 /* TableViewCell.m */,
+				8847005F1B8D4F760044E5F9 /* TableViewCell.xib */,
 				8847003D1B8D4E5E0044E5F9 /* Main.storyboard */,
 				884700401B8D4E5E0044E5F9 /* Images.xcassets */,
 				884700421B8D4E5E0044E5F9 /* LaunchScreen.xib */,
@@ -199,7 +225,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8847006D1B8D55C40044E5F9 /* 5.gif in Resources */,
 				8847003F1B8D4E5E0044E5F9 /* Main.storyboard in Resources */,
+				884700601B8D4F760044E5F9 /* TableViewCell.xib in Resources */,
 				884700441B8D4E5E0044E5F9 /* LaunchScreen.xib in Resources */,
 				884700411B8D4E5E0044E5F9 /* Images.xcassets in Resources */,
 			);
@@ -222,6 +250,10 @@
 				8847003C1B8D4E5E0044E5F9 /* ViewController.m in Sources */,
 				884700391B8D4E5E0044E5F9 /* AppDelegate.m in Sources */,
 				884700361B8D4E5E0044E5F9 /* main.m in Sources */,
+				884700701B8D5AFF0044E5F9 /* BaseTableViewController.m in Sources */,
+				8847005E1B8D4F5C0044E5F9 /* TableViewCell.m in Sources */,
+				8847006B1B8D52550044E5F9 /* SelfModel.m in Sources */,
+				884700731B8D5B7D0044E5F9 /* SBM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
