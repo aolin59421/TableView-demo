@@ -13,6 +13,7 @@
 @property (nonatomic, strong)SelfModel *selfModel;//model类
 @property (nonatomic, strong)NSMutableArray *indexArray;//点击纪录
 @property (nonatomic , strong)NSMutableArray *array;//数据数组
+@property (nonatomic, strong)NSMutableDictionary *dic;//纪录哪些被点中了
 @end
 
 @implementation BaseTableViewController
@@ -25,8 +26,23 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+    
+    //展示有哪些被选中了
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 40, 17);
+    [btn setTitle:@"提交" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [btn addTarget: self action: @selector(go) forControlEvents: UIControlEventTouchUpInside];
+    //添加到导航右方按钮
+    UIBarButtonItem*back=[[UIBarButtonItem alloc]initWithCustomView:btn];
+    self.navigationItem.rightBarButtonItem=back;
+    
+    
     //初始化数组
     _indexArray = [[NSMutableArray alloc] init];
+    _dic = [[NSMutableDictionary alloc] init];
     //把数组置为0
     for (int i = 0; i <10; i++) {
         _indexArray[i] = [NSNumber numberWithInt:0];
@@ -36,6 +52,8 @@
     [self requestATSelf];
 
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -96,10 +114,13 @@
     if ([_indexArray[indexPath.section] integerValue] == 0){
         //没被点击  记录数组为1
         _indexArray[indexPath.section] = [NSNumber numberWithInt:1];
+        [_dic setValue:_indexArray[indexPath.section] forKey:[NSString stringWithFormat:@"%ld",(long)indexPath.section]];
     }
     else{
         //被点击过  记录数组为0
         _indexArray[indexPath.section] = [NSNumber numberWithInt:0];
+        //如果已经被点击那么就移除纪录
+        [_dic removeObjectForKey:[NSString stringWithFormat:@"%ld",(long)indexPath.section]];
     }
     [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationNone];
 }
@@ -183,5 +204,27 @@
          */
     };
     [self.tableView reloadData];
+}
+
+- (void)go
+{
+    
+    NSMutableArray *array = [[NSMutableArray alloc] init];//初始化可变数组
+    NSString *dic_array;//遍历接受所选编号
+    NSString *cardId;//编号
+    for (dic_array in _dic) {
+
+        
+        //根据_dic得到的索引取出想要的值
+        cardId = [NSString stringWithFormat:@"%ld",[dic_array integerValue]];
+//        cardId = [[_array objectAtIndex:[dic_array integerValue]] valueForKey:@"id"];
+        NSLog(@"cardId%@",cardId);
+        //获得想要的值后加入数组中
+        [array addObject:cardId];
+    }
+    NSLog(@"array%@",array);
+    NSString *str = [NSString stringWithFormat:@"%@-被选中了",array];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"LOL" message:str delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    [alert show];
 }
 @end

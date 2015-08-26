@@ -104,13 +104,7 @@
 				8847003B1B8D4E5E0044E5F9 /* ViewController.m */,
 				884700711B8D5B7D0044E5F9 /* SBM.h */,
 				884700721B8D5B7D0044E5F9 /* SBM.m */,
-				8847006E1B8D5AFF0044E5F9 /* BaseTableViewController.h */,
-				8847006F1B8D5AFF0044E5F9 /* BaseTableViewController.m */,
-				884700691B8D52550044E5F9 /* SelfModel.h */,
-				8847006A1B8D52550044E5F9 /* SelfModel.m */,
-				8847005C1B8D4F5C0044E5F9 /* TableViewCell.h */,
-				8847005D1B8D4F5C0044E5F9 /* TableViewCell.m */,
-				8847005F1B8D4F760044E5F9 /* TableViewCell.xib */,
+				884700741B8D6FDC0044E5F9 /* BaseTableViewClass */,
 				8847003D1B8D4E5E0044E5F9 /* Main.storyboard */,
 				884700401B8D4E5E0044E5F9 /* Images.xcassets */,
 				884700421B8D4E5E0044E5F9 /* LaunchScreen.xib */,
@@ -143,6 +137,20 @@
 				8847004E1B8D4E5E0044E5F9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		884700741B8D6FDC0044E5F9 /* BaseTableViewClass */ = {
+			isa = PBXGroup;
+			children = (
+				8847006E1B8D5AFF0044E5F9 /* BaseTableViewController.h */,
+				8847006F1B8D5AFF0044E5F9 /* BaseTableViewController.m */,
+				884700691B8D52550044E5F9 /* SelfModel.h */,
+				8847006A1B8D52550044E5F9 /* SelfModel.m */,
+				8847005C1B8D4F5C0044E5F9 /* TableViewCell.h */,
+				8847005D1B8D4F5C0044E5F9 /* TableViewCell.m */,
+				8847005F1B8D4F760044E5F9 /* TableViewCell.xib */,
+			);
+			name = BaseTableViewClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +456,7 @@
 				884700551B8D4E5E0044E5F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		884700561B8D4E5E0044E5F9 /* Build configuration list for PBXNativeTarget "TableView基类继承demoTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +465,7 @@
 				884700581B8D4E5E0044E5F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
